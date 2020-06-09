@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listify</title>
+    <link rel="stylesheet" href="/stylesheets/auth.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container authbox">
+        <h1> Sign Up! </h1>
+
+        <form action="/register" method="POST">
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="inputEmail3" placeholder="Username" name="username">
+                <small id="usernameHelpBlock" class="form-text text-muted">
+                    Ex. John Doe, johndoe, JohnDoe69, Anthing will do
+                  </small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+                <small id="usernameHelpBlock" class="form-text text-muted">
+                    A password with uppercase & lowercase letters and numbers are considered to be strong.
+                  </small>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </form>
+          <h4>Already have an account?</h4>
+          <a href = "/login"><button class = "btn btn-success">Login</button></a>
+    </div>
+    
+</body>
+</html>
